@@ -12,8 +12,8 @@ data = [
         'height',
         'mean',
         'median',
-        'x_min',
-        'y_min'
+        'x_max',
+        'y_max'
     ]
 ]
 
@@ -33,8 +33,8 @@ for filename in listdir('../../images'):
     
     pixels = image.getdata()
     minimum = 1000000000000
-    x_min = 0 # poziomo
-    y_min = 0 # pionowo
+    x_max = 0 # poziomo
+    y_max = 0 # pionowo
     for i, pixel in enumerate(pixels):
         if pixel == (255, 255, 255):
             x = i % width
@@ -42,10 +42,10 @@ for filename in listdir('../../images'):
             norma = sqrt(x**2 + y**2)
             if norma < minimum:
                 minimum = norma
-                x_min = x 
-                y_min = y
+                x_max = x 
+                y_max = y
 
-    # print(x_min, y_min)
+    # print(x_max, y_max)
     
     data.append([
         filename,
@@ -55,8 +55,8 @@ for filename in listdir('../../images'):
         height,
         mean,
         median,
-        x_min,
-        y_min
+        x_max,
+        y_max
     ])
 
 df = pd.DataFrame(data[1:], columns=data[0]) 
