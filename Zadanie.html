@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Zadanie rekrutacyjne</title><style></style></head><body id="preview">
+<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="Zadanie_rekrutacyjne_0"></a>Zadanie rekrutacyjne</h1>
+<p class="has-line-data" data-line-start="2" data-line-end="3">Celem zadania jest sprawdzenie umiejętności przetwarzania plików graficznych i znajomości metod tworzenia ramek danych w wybranym przez siebie języku programowania. Do zadania dołączony jest plik <code>images.zip</code>, w którym znajdują się pliki graficzne o następującym schemacie nazywania plików - <code>stock-photo-[opis zawartości zdjęcia]-[id zdjęcia].jpg</code>. Zdjęcia należy wczytać do dowolnego środowiska programistycznego w modelu kolorów RGB.</p>
+<h2 class="code-line" data-line-start=4 data-line-end=5 ><a id="Ramka_danych_4"></a>Ramka danych</h2>
+<p class="has-line-data" data-line-start="5" data-line-end="6">Na bazie wczytanych zdjęć, trzeba utworzyć ramkę danych o następujących kolumnach:</p>
+<ul>
+<li class="has-line-data" data-line-start="6" data-line-end="7">Nazwa pliku</li>
+<li class="has-line-data" data-line-start="7" data-line-end="8">Opis zawartości zdjęcia (separator “-” należy zamienić na spację)</li>
+<li class="has-line-data" data-line-start="8" data-line-end="9">Id zdjęcia</li>
+<li class="has-line-data" data-line-start="9" data-line-end="10">Szerokość</li>
+<li class="has-line-data" data-line-start="10" data-line-end="11">Wysokość</li>
+<li class="has-line-data" data-line-start="11" data-line-end="12">Średni kolor</li>
+<li class="has-line-data" data-line-start="12" data-line-end="13">Mediana jasności po przekonwertowaniu na odcienie szarości</li>
+<li class="has-line-data" data-line-start="13" data-line-end="14">Pozioma współrzędna najjaśnieszego pixela po przekonwertowaniu na odcienie szarości*</li>
+<li class="has-line-data" data-line-start="14" data-line-end="16">Pionowa współrzędna najjaśniejszego pixela po przekonwertowaniu na odcienie szarości*</li>
+</ul>
+<p class="has-line-data" data-line-start="16" data-line-end="17">* lewy górny róg obrazu odpowiada współrzędnym (0,0). Jeśli jest wiele najjaśniejszych pixeli, wybieramy ten najbliższy wg. normy euklidesowej do (0,0).</p>
+<p class="has-line-data" data-line-start="18" data-line-end="19">Po utworzeniu ramki danych należy ją zapisać do pliku <code>images.csv</code></p>
+<h2 class="code-line" data-line-start=20 data-line-end=21 ><a id="Agregacja_zdj_20"></a>Agregacja zdjęć</h2>
+<p class="has-line-data" data-line-start="21" data-line-end="22">Drugim zadaniem jest posegregowanie zdjęć w podfoldery. Należy roznąco posortować zdjęcia względem median jasności, podzielić je na kubełki liczności <code>4</code> i zapisać zdjęcia do podfolderów o schemacie nazewnictwa - <code>[numer kubełka]-images</code>, numerując kubełki od <code>1</code>.</p>
+<p class="has-line-data" data-line-start="23" data-line-end="24">Folder z podfolderami należy spakować do pliku <code>agg-images.zip</code>.</p>
+<p class="has-line-data" data-line-start="25" data-line-end="26">W rozwiązaniu należy wysłać kody źródłowe, plik <code>images.csv</code> oraz plik <code>agg-images.zip</code>.</p>
+
+</body></html>
